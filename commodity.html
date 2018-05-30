@@ -5,7 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
@@ -14,63 +15,14 @@
   <link rel="shortcut icon" href="/img/favicon-20180529114416927.ico" type="image/x-icon" />
   <title>山腳傳奇-商品陳列</title>
   <style>
-    /* 圓體字型 */
-
-    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-    body {
-      background-image: url('img/06_bg-img/BG.jpg');
-      /* font-family: '微軟正黑體'; */
-      padding: 0;
-      margin: 0;
-      /* 圓體字型 */
-      font-family: 'cwTeXYen', sans-serif;
-      font-size: 1.3rem;
-    }
-
-    /* navbar */
-
-    .header {
-      width: 100%;
-      /* margin-bottom: 25px; */
-    }
-
-    .navbar-out {
-      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
-      background-size: cover;
-    }
-
-    .navbar {
-      width: 70%;
-      margin: 0 auto;
-      /* background-image: url(img/use/bg_pic_02-03.jpg); */
-      background-color: rgba(255, 255, 255, 0.2);
-      background-size: cover;
-    }
-
-    .header .navbar .navbar-brand {
-      margin: 0 auto;
-    }
-
-    h2,
-    p,
-    h4,
-    h5,
-    input {
-      text-align: center;
-    }
 
     .bgPic01 {
-      width: 100%;
-      height: 50vh;
-      background-image: url('img/04_commodity/commodity_pic_03.jpg');
-      background-size: cover;
-      /* background-repeat: no-repeat; */
-      background-position-y: 70%;
+      background-position-x: 80%;
       transition: all 3s;
     }
 
     .bgPic01.active {
-      background-position-y: 80%;
+      background-position-x: 50%;
     }
 
     .line {
@@ -83,158 +35,11 @@
     .bg-img {
       width: 100%;
       height: 200px;
-      /* background-image:  */
       background-size: cover;
       background-position: 50% 70%;
     }
 
-    /* 大於768px，寬度設定 */
 
-    #cssm.container {
-      width: 60%;
-    }
-
-    #one.container {
-      width: 80%;
-    }
-
-    #two.container {
-      width: 80%;
-    }
-
-    /* Product Quantity */
-
-    .quantity input {
-      -webkit-appearance: none;
-      border: none;
-      text-align: center;
-      width: 32px;
-      font-size: 16px;
-      color: #43484D;
-      font-weight: 300;
-    }
-
-    button[class*=btn] {
-      width: 30px;
-      height: 30px;
-      background-color: #E1E8EE;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .minus-btn img {
-      margin-bottom: 3px;
-    }
-
-    .plus-btn img {
-      margin-top: 2px;
-    }
-
-    button:focus,
-    input:focus {
-      outline: 0;
-    }
-
-
-    /* .footer {
-      height: 200px;
-      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
-    } */
-
-    .footer1 {
-      height: 200px;
-      position: relative;
-      background-image: url(/img/use/bg_pic_02-03.jpg);
-      background-size: cover;
-    }
-
-    .footer1 .box {
-      width: 80%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .footer1 a {
-      color: #000;
-    }
-
-    .footer1 .ul_all {
-      width: 75%;
-      float: left;
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .footer1 .box .QRcode {
-      width: 100px;
-      height: 100px;
-      border: solid 1px;
-      float: left;
-      background-image: url(/img/use/QRcode.png);
-      background-size: cover;
-    }
-
-    .footer1 .box ul {
-      list-style-type: none;
-    }
-
-    .footer1 .box .ul {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .footer1 .box .ul .li {
-      font-size: 15px;
-      font-weight: lighter;
-      text-align: center;
-    }
-
-    .footer1 h6 {
-      text-align: center;
-      width: 100%;
-      float: left;
-    }
-
-    .footer2 {
-      height: 50px;
-      padding: 10px;
-      background-image: url(/img/use/bg_pic_02-03.jpg);
-      background-size: cover;
-      display: none;
-      line-height: 0;
-    }
-
-    .footer2 h6 {
-      text-align: center;
-    }
-
-    .footer2 p {
-      font-size: 10px;
-    }
-
-    /* 小於768px，寬度設定 */
-
-    @media (max-width: 768px) {
-
-      #cssm.container {
-        width: 100%;
-      }
-      #one.container {
-        width: 100%;
-      }
-      #two.container {
-        width: 100%;
-      }
-      .footer1 {
-        display: none;
-      }
-      .footer2 {
-        display: block;
-      }
-    }
   </style>
 
 </head>
@@ -242,11 +47,11 @@
 <body>
   <div class="header">
     <div class="navbar-out">
-      <nav class="navbar navbar-expand-xl navbar-light">
+      <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html">
           <img src="/img/use/LOGO.jpg" alt="" width="40px" height="40px">
         </a>
-        <div class="w-100 d-xl-none d-block"></div>
+        <div class="w-100 d-md-none d-block"></div>
         <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -255,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav w-100 justify-content-around align-items-center">
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">關於我們</a>
+                <a class="nav-link " href="about.html">關於我們</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">最新公告</a>
@@ -269,8 +74,8 @@
                   商品陳列
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="commodity.html">盒裝</a>
-                  <a class="dropdown-item" href="commodity.html">散裝</a>
+                  <a class="dropdown-item" href="#two">盒裝</a>
+                  <a class="dropdown-item" href="#one">散裝</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -282,7 +87,8 @@
       </nav>
     </div>
   </div>
-  <div class="bgPic01"></div>
+  <div id="commodity">
+  <div class="bgPic bgPic01" style="background-image: url('img/04_commodity/commodity_pic_03.jpg');"></div>
   <!--d-flex justify-content-center-->
   <div id="cssm" class="container mb-3 mt-5">
     <h2>看的見‧最安心</h2>
@@ -492,7 +298,7 @@
 
   </div>
 
-
+</div>
 
   <div class="footer1">
     <div class="box">

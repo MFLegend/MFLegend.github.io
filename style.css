@@ -1,0 +1,219 @@
+
+    /* 圓體字型 */
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    body {
+      background-image: url('img/06_bg-img/BG.jpg');
+      padding: 0;
+      margin: 0;
+      /* 圓體字型 */
+      font-family: 'cwTeXYen', sans-serif;
+      font-size: 1.3rem;
+    }
+    h2,
+    p,
+    h4,
+    h5,
+    #commodity.input {
+      text-align: center;
+    }
+    h2, 
+    h4{
+        color: #333;
+    }
+    h5, 
+    p{
+        color: #666;
+    }
+    /* navbar */
+    .header {
+      width: 100%;
+    }
+    .navbar-out {
+      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
+      background-size: cover;
+    }
+    .navbar {
+      width: 70%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-size: cover;
+    }
+    .header .navbar .navbar-brand {
+      margin: 0 auto;
+    }
+    /*pic_move*/
+    .bgPic{
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+      }
+    /* Product Quantity */
+
+    #commodity .quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+        }
+    
+        #commodity button[class*=btn] {
+        width: 30px;
+        height: 30px;
+        background-color: #E1E8EE;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        }
+    
+        #commodity .minus-btn img {
+        margin-bottom: 3px;
+        }
+    
+        #commodity .plus-btn img {
+        margin-top: 2px;
+        }
+    
+        #commodity button:focus,
+        #commodity input:focus {
+        outline: 0;
+        }
+
+    /*footer*/
+    .footer1 {
+        height: 200px;
+        position: relative;
+        background-image: url(/img/use/bg_pic_02-03.jpg);
+        background-size: cover;
+      }
+  
+      .footer1 .box {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  
+      .footer1 a {
+        color: #333;
+      }
+  
+      .footer1 .ul_all {
+        width: 75%;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+      }
+  
+      .footer1 .box .QRcode {
+        width: 100px;
+        height: 100px;
+        border: solid 1px;
+        float: left;
+        background-image: url(/img/use/QRcode.png);
+        background-size: cover;
+      }
+  
+      .footer1 .box ul {
+        list-style-type: none;
+      }
+  
+      .footer1 .box .ul {
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+      .footer1 .box .ul .li {
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+        color: #555;
+      }
+  
+      .footer1 h6 {
+        text-align: center;
+        width: 100%;
+        float: left;
+      }
+  
+      .footer2 {
+        height: 50px;
+        padding: 10px;
+        background-image: url(/img/use/bg_pic_02-03.jpg);
+        background-size: cover;
+        display: none;
+        line-height: 0;
+      }
+  
+      .footer2 h6 {
+        text-align: center;
+      }
+  
+      .footer2 p {
+        font-size: 10px;
+      }
+      
+    /* #commodity大於768px，寬度設定 */
+
+        #about.container {
+        width: 60%;
+         }
+         
+        #cssm.container {
+        width: 60%;
+        }
+    
+        #one.container {
+        width: 80%;
+        }
+    
+        #two.container {
+        width: 80%;
+        }
+
+        #message.container {
+        width: 60%;
+        }
+        #news.container {
+        width: 60%;
+        }
+        #notice.container {
+        width: 60%;
+        }
+    /* 小於768px，寬度設定 */
+    @media (max-width: 768px) {
+
+        #notice.container {
+            width: 100%;
+        }
+        #news.container {
+          width: 100%;
+        }
+        #message.container {
+            width: 100%;
+        }        
+        #cssm.container {
+            width: 100%;
+        }
+        #one.container {
+            width: 100%;
+        }
+        #two.container {
+            width: 100%;
+        }
+        #about.container {
+          width: 100%;
+        }
+        .footer1 {
+          display: none;
+        }
+        .footer2 {
+          display: block;
+        }
+        .navbar {
+          background-color: rgba(255, 255, 255, 0);
+        }
+      }
