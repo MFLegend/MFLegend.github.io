@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- link logo -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>山腳傳奇-商品陳列</title>
+  <style>
+    /* 圓體字型 */
+
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    body {
+      background-image: url('img/06_bg-img/BG.jpg');
+      /* font-family: '微軟正黑體'; */
+      padding: 0;
+      margin: 0;
+      /* 圓體字型 */
+      font-family: 'cwTeXYen', sans-serif;
+      font-size: 1.3rem;
+    }
+
+    /* navbar */
+
+    .header {
+      width: 100%;
+      /* margin-bottom: 25px; */
+    }
+
+    .navbar-out {
+      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
+      background-size: cover;
+    }
+
+    .navbar {
+      width: 70%;
+      margin: 0 auto;
+      /* background-image: url(img/use/bg_pic_02-03.jpg); */
+      background-color: rgba(255, 255, 255, 0.2);
+      background-size: cover;
+    }
+
+    .header .navbar .navbar-brand {
+      margin: 0 auto;
+    }
+
+    h2,
+    p,
+    h4,
+    h5,
+    input {
+      text-align: center;
+    }
+
+    .bgPic01 {
+      width: 100%;
+      height: 50vh;
+      background-image: url('img/04_commodity/commodity_pic_03.jpg');
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+      background-position-y: 70%;
+      transition: all 3s;
+    }
+
+    .bgPic01.active {
+      background-position-y: 80%;
+    }
+
+    .line {
+      width: 100px;
+      height: 10px;
+      background-color: #ff0;
+      margin: 0 auto 1rem;
+    }
+
+    .bg-img {
+      width: 100%;
+      height: 200px;
+      /* background-image:  */
+      background-size: cover;
+      background-position: 50% 70%;
+    }
+
+    /* 大於768px，寬度設定 */
+
+    #cssm.container {
+      width: 60%;
+    }
+
+    #one.container {
+      width: 80%;
+    }
+
+    #two.container {
+      width: 80%;
+    }
+
+    /* Product Quantity */
+
+    .quantity input {
+      -webkit-appearance: none;
+      border: none;
+      text-align: center;
+      width: 32px;
+      font-size: 16px;
+      color: #43484D;
+      font-weight: 300;
+    }
+
+    button[class*=btn] {
+      width: 30px;
+      height: 30px;
+      background-color: #E1E8EE;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .minus-btn img {
+      margin-bottom: 3px;
+    }
+
+    .plus-btn img {
+      margin-top: 2px;
+    }
+
+    button:focus,
+    input:focus {
+      outline: 0;
+    }
+
+
+    /* .footer {
+      height: 200px;
+      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
+    } */
+
+.footer1 {
+            height: 200px;
+            position: relative;
+            background-image: url(/img/use/bg_pic_02-03.jpg);
+            background-size: cover;
+        }
+
+        .footer1 .box {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer1 a {
+            color: #000;
+        }
+
+        .footer1 .ul_all {
+            width: 75%;
+            float: left;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer1 .box .QRcode {
+            width: 100px;
+            height: 100px;
+            border: solid 1px;
+            float: left;
+            background-image: url(/img/use/QRcode.png);
+            background-size: cover;
+        }
+
+        .footer1 .box ul {
+            list-style-type: none;
+        }
+
+        .footer1 .box .ul {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer1 .box .ul .li {
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .footer1 h6 {
+            text-align: center;
+            width: 100%;
+            float: left;
+        }
+
+        .footer2 {
+            height: 200px;
+            background-image: url(/img/use/bg_pic_02-03.jpg);
+            background-size: cover;
+            display: none;
+        }
+
+    /* 小於768px，寬度設定 */
+
+    @media (max-width: 768px) {
+
+      #cssm.container {
+        width: 100%;
+      }
+      #one.container {
+        width: 100%;
+      }
+      #two.container {
+        width: 100%;
+      }
+      .footer1 {
+                display: none;
+            }
+            .footer2 {
+                display: block;
+            }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="navbar-out">
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="/img/use/LOGO.jpg" alt="" width="40px" height="40px">
+        </a>
+        <div class="w-100 d-xl-none d-block"></div>
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-around align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">最新公告</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notice.html">訂購須知</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="commodity.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  商品陳列
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="commodity.html">盒裝</a>
+                  <a class="dropdown-item" href="commodity.html">散裝</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="message.html">店家資訊</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="bgPic01"></div>
+  <!--d-flex justify-content-center-->
+  <div id="cssm" class="container mb-3 mt-5">
+    <h2>看的見‧最安心</h2>
+    <img src="img/04_commodity/CSSM.JPG" style="width: 100%;" alt="">
+  </div>
+  <div id="one" class="container mb-3 mt-5">
+    <h2>商品陳列</h2>
+    <h4>散裝-土鳳梨酥</h4>
+    <div class="line"></div>
+
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-xl-6">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/commodity_pic_02.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">散裝/原味土鳳梨酥</h5>
+            <p class="card-text">10元/30g</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/commodity_pic_01.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">散裝/杏仁角土鳳梨酥</h5>
+            <p class="card-text">25元/50g</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="two" class="container mb-3 mt-5">
+
+    <h4>禮盒-土鳳梨酥</h4>
+    <div class="line"></div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-20.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+            <p class="card-text">240元/20入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-10.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/杏仁角土鳳梨酥</h5>
+            <p class="card-text">270元/10入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-15.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+            <p class="card-text">180元/15入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-16-1.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/原味/杏仁角土鳳梨酥</h5>
+            <p class="card-text">300元/16入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-16-2.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/杏仁角土鳳梨酥</h5>
+            <p class="card-text">420元/16入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow mb-3 mb-md-4">
+          <div class="bg-img" style="background-image: url('img/04_commodity/for-12.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+            <p class="card-text">150元/12入</p>
+
+            <div class="quantity d-flex justify-content-center mb-3">
+              <button class="minus-btn" type="button" name="button">
+                <img src="img/minus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1">
+              <button class="plus-btn" type="button" name="button">
+                <img src="img/plus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer1">
+    <div class="box">
+        <ul class="ul_all">
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/about.html">關於我們</a>
+                    <div class="li">創業理念</div>
+                    <div class="li">相關報導</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/news.html">最新公告</a>
+                    <div class="li">限塑資訊</div>
+                    <div class="li">最新活動</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/notice.html">訂購須知</a>
+                    <div class="li">交易流程</div>
+                    <div class="li">帳號提供</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/commodity.html">商品陳列</a>
+                    <div class="li">散裝土鳳梨酥</div>
+                    <div class="li">禮盒土鳳梨酥</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/message.html">店家資訊</a>
+                    <div class="li">意見回饋表</div>
+                    <div class="li">店家電話</div>
+                    <div class="li">店家位址</div>
+                    <div class="li">營業時間</div>
+                </div>
+            </li>
+        </ul>
+        <div class="QRcode"></div>
+        <h6>警告！本網頁為教學研究試做，請勿用於商業用途！</h6>
+    </div>
+
+</div>
+<div class="footer2">
+    <h3>山腳傳奇</h3>
+    <h6>警告！本網頁為教學研究試做，請勿用於商業用途！</h6>
+</div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $(function () {
+
+        $(window).scroll(function () {
+          var scrollVal = $(this).scrollTop();
+          if (scrollVal >= 60) {
+            $('.bgPic01').addClass('active');
+          } else {
+            $('.bgPic01').removeClass('active');
+          }
+        });
+      });
+    });
+
+  </script>
+
+  <script type="text/javascript">
+    $('.minus-btn').on('click', function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value > 1) {
+        value = value - 1;
+      } else {
+        value = 0;
+      }
+
+      $input.val(value);
+
+    });
+
+    $('.plus-btn').on('click', function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value < 100) {
+        value = value + 1;
+      } else {
+        value = 100;
+      }
+
+      $input.val(value);
+    });
+
+  </script>
+
+</body>
+
+</html>

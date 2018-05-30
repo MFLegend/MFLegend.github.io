@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <title>山腳傳奇-店家資訊</title>
+
+  <style>
+    /* 圓體字型 */
+    .footer1 {
+            height: 200px;
+            position: relative;
+            background-image: url(/img/use/bg_pic_02-03.jpg);
+            background-size: cover;
+        }
+
+        .footer1 .box {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer1 a {
+            color: #000;
+        }
+
+        .footer1 .ul_all {
+            width: 75%;
+            float: left;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer1 .box .QRcode {
+            width: 100px;
+            height: 100px;
+            border: solid 1px;
+            float: left;
+            background-image: url(/img/use/QRcode.png);
+            background-size: cover;
+        }
+
+        .footer1 .box ul {
+            list-style-type: none;
+        }
+
+        .footer1 .box .ul {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer1 .box .ul .li {
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .footer1 h6 {
+            text-align: center;
+            width: 100%;
+            float: left;
+        }
+
+        .footer2 {
+            height: 200px;
+            background-image: url(/img/use/bg_pic_02-03.jpg);
+            background-size: cover;
+            display: none;
+        }
+
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    body {
+      background-image: url('img/06_bg-img/BG.jpg');
+      /* font-family: '微軟正黑體'; */
+      padding: 0;
+      margin: 0;
+      /* 圓體字型 */
+      font-family: 'cwTeXYen', sans-serif;
+      font-size: 1.3rem;
+    }
+
+    /* navbar */
+
+    .header {
+      width: 100%;
+      /* margin-bottom: 25px; */
+    }
+
+    .navbar-out {
+      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
+      background-size: cover;
+    }
+
+    .navbar {
+      width: 70%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-size: cover;
+    }
+
+    .header .navbar .navbar-brand {
+      margin: 0 auto;
+    }
+
+    h2,
+    p,
+    h4 {
+      text-align: center;
+    }
+
+    .bgPic01 {
+      width: 100%;
+      height: 50vh;
+      background-image: url('img/04_commodity/commodity_pic_03.jpg');
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+      background-position-y: 70%;
+      transition: all 3s;
+    }
+
+    .bgPic01.active {
+      background-position-y: 80%;
+    }
+
+
+
+    .line {
+      width: 100px;
+      height: 10px;
+      background-color: #ff0;
+      margin: 0 auto 1rem;
+    }
+
+    /* .footer {
+      height: 200px;
+      background-image: url('img/06_bg-img/bg_pic_02-03.jpg');
+    } */
+
+    #colFormLabel::placeholder {
+      color: #bbb;
+      opacity: 1;
+      /* Firefox */
+    }
+
+    #message.container {
+      width: 60%;
+    }
+
+
+    /* 小於768px，寬度設定 */
+
+    @media (max-width: 992px) {
+      .container {
+        width: 100%;
+      }
+      .footer1 {
+                display: none;
+            }
+            .footer2 {
+                display: block;
+            }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="navbar-out">
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="/img/use/LOGO.jpg" alt="" width="40px" height="40px">
+        </a>
+        <div class="w-100 d-xl-none d-block"></div>
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container justify-content-end">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-around align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">最新公告</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notice.html">訂購須知</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="commodity.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  商品陳列
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="commodity.html">盒裝</a>
+                  <a class="dropdown-item" href="commodity.html">散裝</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="message.html">店家資訊</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="bgPic01"></div>
+  <!--d-flex justify-content-center-->
+  <div id="message" class="container mb-5 mt-3 mt-xl-5 bg-light pl-1 pl-lg-3 pr-1 pr-lg-3 ">
+    <h2>店家資訊</h2>
+    <div class="line mb-5 mt-3 mt-xl-5"></div>
+    <h4>意見回饋表</h4>
+    <p>您可以把意見及問題告訴我們，一定盡速給您答覆。
+    </p>
+
+    <form class="form">
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">聯絡人</label>
+        <div class="col-sm-10">
+          <input type="name" class="form-control form-control" id="colFormLabel" placeholder="範例: 李真帥">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">公司名稱</label>
+        <div class="col-sm-10">
+          <input type="firm" class="form-control" id="colFormLabel" placeholder="範例: 山腳傳奇-土鳳梨酥">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">電子信箱</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control" id="colFormLabel" placeholder="範例: ikx1026g@gmail.com">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">主旨</label>
+        <div class="col-sm-10">
+          <input type="theme" class="form-control form-control" id="colFormLabel" placeholder="範例: 我已匯款，請幫忙出貨。">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">內容</label>
+        <textarea class="form-control" id="colFormLabel" rows="8" placeholder="範例: 到貨日，三聯發票或統編等等..."></textarea>
+      </div>
+      <div class="container d-flex">
+        <a class="btn btn-success mb-3 mr-auto ml-auto" href="#pay" role="button">送出</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="container mb-5 mt-3 mt-xl-5">
+    <h4>聯絡我們</h4>
+    <div class="line mb-5 mt-3 mt-xl-5 "></div>
+
+    <p>聯絡電話:04-8734027</p>
+    <p>客服手機:0935389908</p>
+    <p>LINE ID:@ikx1036g</p>
+    <p>營業時間:8:00~19:00</p>
+    <p>本店位址:彰化縣社頭鄉朝興村山腳路二段479巷20號(朝興國小後面)</p>
+    <p>★如果使用導航系統，請以朝興國小為目的地。</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1084.4067851291877!2d120.60651236524124!3d23.907515731321055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693411f803bc51%3A0x76223048ebecfd60!2z5qau6LK057OV6aSF6KGM!5e0!3m2!1szh-TW!2stw!4v1527563513937"
+      width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <div class="footer1">
+    <div class="box">
+        <ul class="ul_all">
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/about.html">關於我們</a>
+                    <div class="li">創業理念</div>
+                    <div class="li">相關報導</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/news.html">最新公告</a>
+                    <div class="li">限塑資訊</div>
+                    <div class="li">最新活動</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/notice.html">訂購須知</a>
+                    <div class="li">交易流程</div>
+                    <div class="li">帳號提供</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/commodity.html">商品陳列</a>
+                    <div class="li">散裝土鳳梨酥</div>
+                    <div class="li">禮盒土鳳梨酥</div>
+                </div>
+            </li>
+            <li>
+                <div class="ul">
+                    <a class="nav-link" href="/message.html">店家資訊</a>
+                    <div class="li">意見回饋表</div>
+                    <div class="li">店家電話</div>
+                    <div class="li">店家位址</div>
+                    <div class="li">營業時間</div>
+                </div>
+            </li>
+        </ul>
+        <div class="QRcode"></div>
+        <h6>警告！本網頁為教學研究試做，請勿用於商業用途！</h6>
+    </div>
+
+</div>
+<div class="footer2">
+    <h3>山腳傳奇</h3>
+    <h6>警告！本網頁為教學研究試做，請勿用於商業用途！</h6>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(function () {
+
+        $(window).scroll(function () {
+          var scrollVal = $(this).scrollTop();
+          if (scrollVal >= 60) {
+            $('.bgPic01').addClass('active');
+          } else {
+            $('.bgPic01').removeClass('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
