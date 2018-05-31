@@ -122,7 +122,7 @@
       }
   
       .footer1 .box .ul {
-        font-size: 20px;
+        font-size: 1.3em;
         font-weight: bold;
       }
   
@@ -158,8 +158,8 @@
       
     /* #commodity大於768px，寬度設定 */
 
-        #about.container {
-        width: 60%;
+        #about .container {
+        width: 50%;
          }
          
         #cssm.container {
@@ -167,11 +167,11 @@
         }
     
         #one.container {
-        width: 80%;
+        width: 60%;
         }
     
         #two.container {
-        width: 80%;
+        width: 60%;
         }
 
         #message.container {
@@ -180,13 +180,13 @@
         #news.container {
         width: 60%;
         }
-        #notice.container {
-        width: 60%;
+        #notice .container {
+        width: 65%;
         }
     /* 小於768px，寬度設定 */
     @media (max-width: 768px) {
 
-        #notice.container {
+        #notice .container {
             width: 100%;
         }
         #news.container {
@@ -204,7 +204,7 @@
         #two.container {
             width: 100%;
         }
-        #about.container {
+        #about .container {
           width: 100%;
         }
         .footer1 {
