@@ -1,0 +1,495 @@
+
+        
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            font-size: 1.3rem;            
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            background-image: url('../img/06_bg-img/bg_a.jpg');
+            background-size: cover;
+        }
+        /* -----------------navbar--------------------------- */
+        
+        .navbar-nav li.navi_01 {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background-image: url('../img/06_bg-img/2-01-big.png');
+            background-size: cover;
+            background-position: center bottom;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .navbar-nav li.navi_01 a {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;            
+            background: url(../img/06_bg-img/2-01.png) left -35px no-repeat;
+        }
+
+        .navbar-nav li.navi_01 a:hover {
+            background-image: url('../img/06_bg-img/2-01-big.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        .navbar-nav li.navi_02 {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background-image: url('../img/06_bg-img/2-02-big.png');
+            background-size: cover;
+            background-position: center bottom;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .navbar-nav li.navi_02 a {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-02.png) left -35px no-repeat;
+        }
+
+        .navbar-nav li.navi_02 a:hover {
+            background-image: url('../img/06_bg-img/2-02-big.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        
+        .navbar-nav li.navi_03 {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background-image: url('../img/06_bg-img/2-03-big.png');
+            background-size: cover;
+            background-position: center bottom;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .navbar-nav li.navi_03 a {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-03.png) left -35px no-repeat;
+        }
+
+        .navbar-nav li.navi_03 a:hover {
+            background-image: url('../img/06_bg-img/2-03-big.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        .navbar-nav li.navi_04 {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background-image: url('../img/06_bg-img/2-04-big.png');
+            background-size: cover;
+            background-position: center bottom;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .navbar-nav li.navi_04 a {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-04.png) left -35px no-repeat;
+        }
+
+        .navbar-nav li.navi_04 a:hover {
+            background-image: url('../img/06_bg-img/2-04-big.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        .navbar-nav li.navi_05 {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background-image: url('../img/06_bg-img/2-05-big.png');
+            background-size: cover;
+            background-position: center bottom;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .navbar-nav li.navi_05 a {
+            width: 200px;
+            height: 60px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-05.png) left -35px no-repeat;
+        }
+
+        .navbar-nav li.navi_05 a:hover {
+            background-image: url('../img/06_bg-img/2-05-big.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        /*---------------------index-----------------------*/
+
+        .banner_cen li.navi_01 {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-01.png) top left no-repeat;
+            text-indent: -9999px;
+        }
+
+        .banner_cen li.navi_01 a {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-01.png) top left no-repeat;
+        }
+
+        .banner_cen li.navi_01 a:hover {
+            background: url(../img/06_bg-img/1-01.png) left -220px no-repeat;
+        }
+
+        .banner_cen li.navi_02 {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-02.png) top left no-repeat;
+            text-indent: -9999px;
+        }
+
+        .banner_cen li.navi_02 a {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-02.png) top left no-repeat;
+        }
+
+        .banner_cen li.navi_02 a:hover {
+            background: url(../img/06_bg-img/1-02.png) left -220px no-repeat;
+        }
+
+        .banner_cen li.navi_03 {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-03.png) top left no-repeat;
+            text-indent: -9999px;
+        }
+
+        .banner_cen li.navi_03 a {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-03.png) top left no-repeat;
+        }
+
+        .banner_cen li.navi_03 a:hover {
+            background: url(../img/06_bg-img/1-03.png) left -220px no-repeat;
+        }
+
+
+        .banner_cen li.navi_04 {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-04.png) top left no-repeat;
+            text-indent: -9999px;
+        }
+
+        .banner_cen li.navi_04 a {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-04.png) top left no-repeat;
+        }
+
+        .banner_cen li.navi_04 a:hover {
+            background: url(../img/06_bg-img/1-04.png) left -220px no-repeat;
+        }
+
+        .banner_cen li.navi_05 {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-05.png) top left no-repeat;
+            text-indent: -9999px;
+        }
+
+        .banner_cen li.navi_05 a {
+            width: 100%;
+            height: 220px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/1-05.png) top left no-repeat;
+        }
+
+        .banner_cen li.navi_05 a:hover {
+            background: url(../img/06_bg-img/1-05.png) left -220px no-repeat;
+        }
+
+        /* ---------------------footer--------------------- */
+        #footer {
+            width: 100%;
+            float: left;
+            display: block;
+            overflow: hidden;
+            background-color: #aaa;
+            background: url(../img/06_bg-img/bg_pic_01.jpg) repeat;
+        }
+
+        .footerwrap {
+            /* width: 1000px; */
+            margin: 0 auto;
+            display: block;
+            overflow: hidden;
+        }
+
+        .footerwrap .left {
+            width: 100%;
+            float: left;
+            display: block;
+            color: #888;
+            padding: 15px 0 30px 0;
+        }
+
+
+
+
+        .footerwrap .right {
+            width: 100%;
+            float: left;
+            display: block;
+            padding: 25px 0 0 0;
+        }
+
+        .footerwrap .right ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footerwrap .right li.navi_01 {
+            width: 115px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-01.png) top left no-repeat;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .footerwrap .right li.navi_01 a {
+            width: 115px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-01.png) top left no-repeat;
+        }
+
+        .footerwrap .right li.navi_01 a:hover {
+            background: url(../img/06_bg-img/2-01.png) left -35px no-repeat;
+        }
+
+        .footerwrap .right li.navi_02 {
+            width: 135px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-02.png) top left no-repeat;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .footerwrap .right li.navi_02 a {
+            width: 135px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-02.png) top left no-repeat;
+        }
+
+        .footerwrap .right li.navi_02 a:hover {
+            background: url(../img/06_bg-img/2-02.png) left -35px no-repeat;
+        }
+
+        .footerwrap .right li.navi_03 {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-03.png) top left no-repeat;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .footerwrap .right li.navi_03 a {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-03.png) top left no-repeat;
+        }
+
+        .footerwrap .right li.navi_03 a:hover {
+            background: url(../img/06_bg-img/2-03.png) left -35px no-repeat;
+        }
+
+        .footerwrap .right li.navi_04 {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-04.png) top left no-repeat;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .footerwrap .right li.navi_04 a {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-04.png) top left no-repeat;
+        }
+
+        .footerwrap .right li.navi_04 a:hover {
+            background: url(../img/06_bg-img/2-04.png) left -35px no-repeat;
+        }
+
+        .footerwrap .right li.navi_05 {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-05.png) top left no-repeat;
+            text-indent: -9999px;
+            margin: 0 52px 0 0;
+        }
+
+        .footerwrap .right li.navi_05 a {
+            width: 120px;
+            height: 35px;
+            float: left;
+            display: block;
+            background: url(../img/06_bg-img/2-05.png) top left no-repeat;
+        }
+
+        .footerwrap .right li.navi_05 a:hover {
+            background: url(../img/06_bg-img/2-05.png) left -35px no-repeat;
+        }
+
+        @media (max-width: 767.98px) {
+
+            .swiper-slide {
+                background-position: left;
+            }
+            .center .container {
+                width: 100%;
+            }
+            .banner_cen li.navi_01 {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-01-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_01 a {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-01-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_01 a:hover {
+                background: url(../img/06_bg-img/2-01-big.png) left -220px no-repeat;
+            }
+            .banner_cen li.navi_02 {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-02-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_02 a {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-02-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_02 a:hover {
+                background: url(../img/06_bg-img/2-02-big.png) left -220px no-repeat;
+            }
+            .banner_cen li.navi_03 {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-03-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_03 a {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-03-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_03 a:hover {
+                background: url(../img/06_bg-img/2-03-big.png) left -220px no-repeat;
+            }
+            .banner_cen li.navi_04 {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-04-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_04 a {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-04-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_04 a:hover {
+                background: url(../img/06_bg-img/2-04-big.png) left -220px no-repeat;
+            }
+            .banner_cen li.navi_05 {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-05-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_05 a {
+                width: 100%;
+                height: 60px;
+                background: url(../img/06_bg-img/2-05-big.png) center bottom no-repeat;
+            }
+
+            .banner_cen li.navi_05 a:hover {
+                background: url(../img/06_bg-img/2-05-big.png) left -220px no-repeat;
+            }
+            #footer .footerwrap .right {
+                display: none;
+            }
+            .container {
+                max-width: 100%;
+            }
+        }

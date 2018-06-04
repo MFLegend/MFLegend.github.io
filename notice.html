@@ -1,238 +1,351 @@
 <!doctype html>
+<!-- 20180605-updata -->
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- link css -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="icon" href="/img/favicon-20180529114416927.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/img/favicon-20180529114416927.ico" type="image/x-icon" />
-  <title>山腳傳奇-訂購須知</title>
-  <style>
-    .bgPic01 {
-      background-repeat: no-repeat;
-      background-position-y: 50%;
-      transition: all 3s;
-    }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/btn.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
-    .bgPic02 {
-      background-repeat: no-repeat;
-      background-position-y: 50%;
-      transition: all 3s;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <title>Hello, world!</title>
+    <style>
+        /* ***************navbar****************/
 
-    .bgPic01.active {
-      background-position-y: 70%;
-    }
+        .navbar {
+            height: 260px;
+            background-image: url('img/06_bg-img/bg_pic_01.jpg');
+            margin: 0;
+        }
 
-    .bgPic02.active {
-      background-position-y: 70%;
-    }
+        .navbar .container img {
+            right: 0;
+            z-index: 0;
+        }
+
+        /* ---------OOOOOooo------------------ */
+
+        .logo {
+            width: 290px;
+            height: 200px;
+            background-image: url('logo.png');
+            background-size: cover;
+            background-position: center bottom;
+            top: 130px;
+            left: 4rem;
+            z-index: 0;
+            /* transition: 1s; */
+        }
+
+        .center {
+            width: 100%;
+            /* height: 740px; */
+            margin: 0 auto;
+        }
+
+        #notice .container {
+            width: 60%;
+        }
+
+        .container .banner {
+            width: 100%;
+            height: 100%;
+        }
 
 
-    .line {
-      width: 100px;
-      height: 10px;
-      background-color: #ff0;
-      margin: 0 0 1rem;
-    }
-  </style>
+        .center .container {
+            width: 60%;
+        }
+
+        .bg_house {
+            width: 100%;
+            height: 400px;
+            background-image: url('img/06_bg-img/bg_house.png');
+            background-size: cover;
+            background-position: 0 90%;
+            bottom: 0;
+            z-index: -999;
+        }
+
+        @media (max-width: 991.98px) {
+            .logo {
+                top: 1rem;
+                left: 50%;
+                transform: translateX(-50%)
+                /* transition: 1s; */
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            #notice .container {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="header">
-    <div class="navbar-out">
-      <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="/img/use/LOGO.jpg" alt="" width="40px" height="40px">
-        </a>
-        <div class="w-100 d-md-none d-block"></div>
-        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container justify-content-end">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 justify-content-around align-items-center">
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">關於我們</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">最新公告</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="notice.html">訂購須知</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="commodity.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  商品陳列
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="commodity.html">盒裝</a>
-                  <a class="dropdown-item" href="commodity.html">散裝</a>
+
+    <!-- Swiper -->
+
+    <div class="swiper-container position-fixed fixed-top d-block d-lg-none">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+
+                <!-- btn               -->
+
+                <ul class="navbar-nav w-75 h-100 justify-content-around align-items-center">
+                    <li class="container">
+                        <div class="logo position-relative"></div>
+                    </li>
+                    <li class="navi_01 mr-0">
+                        <a href="about.html" title="關於我們">關於我們</a>
+                    </li>
+                    <li class="navi_02 mr-0">
+                        <a class="nav-link" href="news.html">最新公告</a>
+                    </li>
+                    <li class="navi_03 mr-0">
+                        <a class="nav-link" href="notice.html">訂購須知</a>
+                    </li>
+                    <li class="navi_04 mr-0">
+                        <a class="nav-link" href="commodity.html">商品陳列</a>
+                    </li>
+                    <li class="navi_05 mr-0">
+                        <a class="nav-link" href="message.html">店家資訊</a>
+                    </li>
+                </ul>
+
+                <!-- <button></button> -->
+
+            </div>
+            <div class="swiper-slide content">
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="message.html">店家資訊</a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
     </div>
-  </div>
-  <div class="bgPic bgPic01 mb-5" style="background-image: url('img/03_notice/notice_pic_01.png');"></div>
-  <div class="container" style="background-color: rgb(255, 252, 204)">
-    <h2>訂購須知</h2>
-    <hr>
+
+    <!-- banner -->
+
+    <div class="navbar">
+        <div class="container">
+            <img class="position-absolute" src="img/06_bg-img/bg_nav.png" alt="">
+            <div class="container w-75 mt-5 pb-4">
+                <div class="banner banner_cen d-none d-lg-block">
+                    <ul>
+                        <div class="row">
+                            <div class="col-12 col-md-1 p-0"></div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_01">
+                                    <a href="about.html" title="關於我們">關於我們</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_02">
+                                    <a href="news.html" title="最新消息">最新消息</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_03">
+                                    <a href="notice.html" title="訂購須知">訂購須知</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_04">
+                                    <a href="commodity.html" title="商品陳列">商品陳列</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_05">
+                                    <a href="message.html" title="店家資訊">店家資訊</a>
+                                </li>
+                                <div class="col-12 col-md-1 p-0"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <div class="logo position-absolute d-none d-lg-block"></div>
+    </a>
+
+    <!-- index -->
+
+
     <div id="notice">
-      <div class="container mb-5 mt-3 mt-xl-5">
-        <div class="row">
-          <div class="col-6 d-flex justify-content-end">
-            <a class="btn btn-success mb-3" href="#question" role="button">常見問題</a>
-          </div>
-          <div class="col-6">
-            <a class="btn btn-success mb-3" href="#pay" role="button">付款資訊</a>
-          </div>
+        <div class="container mt-3 mt-md-5" style="background-color: rgb(255, 252, 224)">
+            <h2 class="text-center">訂購須知</h2>
+            <hr>
+            <div class="container mb-5 mt-3 mt-xl-5">
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-end">
+                        <a class="btn btn-success mb-3" href="#question" role="button">常見問題</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn btn-success mb-3" href="#pay" role="button">付款資訊</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question" class="container w-100 mb-5 mt-3 mt-xl-5">
+                <h3>如何購買商品?</h3>
+                <div class="line"></div>
+                <samp>您可先將欲購買的商品「加入購物車」， 選購完成後，開始結帳並選擇付款方式。 </samp>
+            </div>
+            <div class="container w-100 mb-5 mt-3 mt-xl-5">
+                <h3>消費滿多少才可以免運費呢？</h3>
+                <div class="line"></div>
+                <samp>單次訂單消費滿NT$1600， 即可享免運優惠哦！（限同一地址） 購買不足1600元 ，運費100。 離島運費另計(論件),請先洽詢。 貨到付款手續費 加60 元 (固定收取)。 </samp>
+            </div>
+            <div class="container w-100 mb-5 mt-3 mt-xl-5">
+                <h3>下單後多久可以出貨? </h3>
+                <div class="line"></div>
+                <samp>訂單完成後 2 ~ 4 天即可出貨。 也可以指定上午或下午,只是大約間間, 急件請日期提早一天。 星期日, 及每天晚上不送貨。 </samp>
+            </div>
+            <div class="container w-100 mb-5 mt-3 mt-xl-5">
+                <h3>付款方式有哪些？ </h3>
+                <div class="line"></div>
+                <samp>可以採「貨到付款」、 「ATM轉帳匯款」或「無摺存款」方式。 </samp>
+            </div>
+
+            <div class="bgPic bgPic02" style="background-image: url('img/03_notice/notice_pic_02.jpg');"></div>
+
+            <div id="pay" class="container w-100 mb-5 mt-3 mt-xl-5">
+                <h3>「ATM轉帳匯款」匯款帳號： </h3>
+                <div class="line"></div>
+                <hr>
+                <p>郵局代號700 </p>
+                <p>帳號:008-123-710-8968-5</p>
+                <p>戶名:陳小惠</p>
+                <hr>
+                <p>聯絡電話:04-8734027</p>
+                <p>客服手機:0935389908</p>
+                <p>LINE ID:@ikx1036g</p>
+                <p>請有下單並已匯款的朋友,請到<a href="message.html">|意見回饋表|</a></p>
+                <p>-</p>
+            </div>
         </div>
-      </div>
+        <div class="bg_house  position-relative"></div>
 
-      <div id="question" class="container mb-5 mt-3 mt-xl-5">
-        <h3>如何購買商品?</h3>
-        <div class="line"></div>
-        <samp>您可先將欲購買的商品「加入購物車」， 選購完成後，開始結帳並選擇付款方式。 </samp>
-      </div>
-      <div class="container mb-5 mt-3 mt-xl-5">
-        <h3>消費滿多少才可以免運費呢？</h3>
-        <div class="line"></div>
-        <samp>單次訂單消費滿NT$1600， 即可享免運優惠哦！（限同一地址） 購買不足1600元 ，運費100。 離島運費另計(論件),請先洽詢。 貨到付款手續費 加60 元 (固定收取)。 </samp>
-      </div>
-      <div class="container mb-5 mt-3 mt-xl-5">
-        <h3>下單後多久可以出貨? </h3>
-        <div class="line"></div>
-        <samp>訂單完成後 2 ~ 4 天即可出貨。 也可以指定上午或下午,只是大約間間, 急件請日期提早一天。 星期日, 及每天晚上不送貨。 </samp>
-      </div>
-      <div class="container mb-5 mt-3 mt-xl-5">
-        <h3>付款方式有哪些？ </h3>
-        <div class="line"></div>
-        <samp>可以採「貨到付款」、 「ATM轉帳匯款」或「無摺存款」方式。 </samp>
-      </div>
-
-      <div class="bgPic bgPic02" style="background-image: url('img/03_notice/notice_pic_02.jpg');"></div>
-
-      <div id="pay" class="container mb-5 mt-3 mt-xl-5">
-        <h3>「ATM轉帳匯款」匯款帳號如下： </h3>
-        <div class="line"></div>
-        <hr>
-        <p>郵局代號700 </p>
-        <p>帳號:008-123-710-8968-5</p>
-        <p>戶名:陳小惠</p>
-        <hr>
-        <p>聯絡電話:04-8734027</p>
-        <p>客服手機:0935389908</p>
-        <p>LINE ID:@ikx1036g</p>
-        <p>請有下單並已匯款的朋友, 到
-          <a href="message.html">|意見回饋表|</a>,告訴我們已匯款資料。</p>
-      </div>
-    </div>
-  </div>
-  <div class="footer1">
-    <div class="box">
-      <ul class="ul_all">
-        <li>
-          <div class="ul">
-            <a class="nav-link" href="/about.html">關於我們</a>
-            <div class="li">創業理念</div>
-            <div class="li">相關報導</div>
-          </div>
-        </li>
-        <li>
-          <div class="ul">
-            <a class="nav-link" href="/news.html">最新公告</a>
-            <div class="li">限塑資訊</div>
-            <div class="li">最新活動</div>
-          </div>
-        </li>
-        <li>
-          <div class="ul">
-            <a class="nav-link" href="/notice.html">訂購須知</a>
-            <div class="li">交易流程</div>
-            <div class="li">帳號提供</div>
-          </div>
-        </li>
-        <li>
-          <div class="ul">
-            <a class="nav-link" href="/commodity.html">商品陳列</a>
-            <div class="li">散裝土鳳梨酥</div>
-            <div class="li">禮盒土鳳梨酥</div>
-          </div>
-        </li>
-        <li>
-          <div class="ul">
-            <a class="nav-link" href="/message.html">店家資訊</a>
-            <div class="li">意見回饋表</div>
-            <div class="li">店家電話</div>
-            <div class="li">店家位址</div>
-            <div class="li">營業時間</div>
-          </div>
-        </li>
-      </ul>
-      <div class="QRcode"></div>
-      <h6>警告！本網頁為教學研究試做，請勿用於商業用途！</h6>
     </div>
 
-  </div>
-  <div class="footer2">
-    <h6>山腳傳奇</h6>
-    <p>警告！本網頁為教學研究試做，請勿用於商業用途！</p>
-  </div>
+    <!-- footer -->
+
+    <div id="footer">
+        <div class="container footerwrap">
+            <div class="right">
+                <ul class="nonestyle">
+                    <div class="row">
+                        <div class="col-0 col-ig-1"></div>
+                        <div class="col-2">
+                            <li class="navi_01">
+                                <a href="about.html" title="關於我們">關於我們</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_02">
+                                <a href="news.html" title="最新消息">最新消息</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_03">
+                                <a href="notice.html" title="購買須知">購買須知</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_04">
+                                <a href="commodity.html" title="商品陳列">商品陳列</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_05">
+                                <a href="message.html" title="店家資訊">店家資訊</a>
+                            </li>
+                        </div>
+                        <div class="col-2 col-ig-1"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="left text-truncate">
+                <div class="container d-none d-md-block">
+                    山腳傳奇:土鳳梨酥版權所有 │ 電話 : 04-8734027 │地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                </div>
+
+                <div class="row d-block d-md-none ">
+                    <div class="col-12 col-md-4 text-center">
+                        山腳傳奇:土鳳梨酥版權所有
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        電話 : 04-8734027
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                    </div>
+                </div>
+            </div>
+            <p class=" text-center">
+                <a href="mfl_p1/about.html">進入初版設計</a>
+            </p>
+        </div>
+    </div>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-  <script>
-    $(document).ready(function () {
+    <!-- Swiper JS -->
+    <script src="style/swiper.min.js"></script>
 
-      $(function () {
-
-        $(window).scroll(function () {
-          var scrollVal = $(this).scrollTop();
-          if (scrollVal >= 60) {
-            $('.bgPic01').addClass('active');
-          } else {
-            $('.bgPic01').removeClass('active');
-          }
+    <!-- Initialize Swiper -->
+    <script>
+        var menuButton = document.querySelector('.menu-button');
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                init: function () {
+                    var slider = this;
+                    menuButton.addEventListener('click', function () {
+                        if (slider.activeIndex === 0) {
+                            slider.slideNext();
+                        } else {
+                            slider.slidePrev();
+                        }
+                    }, true);
+                },
+                slideChange: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                        menuButton.classList.add('cross');
+                    } else {
+                        menuButton.classList.remove('cross');
+                    }
+                },
+            }
         });
-      });
-      $(function () {
-
-        $(window).scroll(function () {
-          var scrollVal = $(this).scrollTop();
-          console.log(scrollVal);
-          if (scrollVal >= 770) {
-            $('.bgPic02').addClass('active');
-          } else {
-            $('.bgPic02').removeClass('active');
-          }
-        });
-      });
-
-    });
-
-  </script>
-
+    </script>
 </body>
 
 </html>
