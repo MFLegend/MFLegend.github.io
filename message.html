@@ -16,9 +16,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style/swiper.min.css">
-    <title>山腳傳奇-訂購須知</title>
+    <title>山腳傳奇-店家資訊</title>
     <style>
         /* ***************navbar****************/
+
+        html,
+        body {
+            color: #555;
+        }
 
         .navbar {
             height: 260px;
@@ -51,8 +56,8 @@
             margin: 0 auto;
         }
 
-        #notice .container {
-            width: 60%;
+        #message .container {
+            width: 55%;
         }
 
         .container .banner {
@@ -85,7 +90,7 @@
         }
 
         @media (max-width: 767.98px) {
-            #notice .container {
+            #message .container {
                 width: 100%;
             }
         }
@@ -187,58 +192,63 @@
     <!-- index -->
 
 
-    <div id="notice">
-        <div class="container mt-3 mt-md-5" style="background-color: rgb(255, 252, 224)">
-            <h2 class="text-center">訂購須知</h2>
-            <hr>
-            <div class="container mb-5 mt-3 mt-xl-5">
-                <div class="row">
-                    <div class="col-6 d-flex justify-content-end">
-                        <a class="btn btn-success mb-3" href="#question" role="button">常見問題</a>
-                    </div>
-                    <div class="col-6">
-                        <a class="btn btn-success mb-3" href="#pay" role="button">付款資訊</a>
+    <div id="message">
+        <div class="container mb-5 mt-3 mt-xl-5 bg-light pl-1 pl-lg-3 pr-1 pr-lg-3 ">
+            <h2 class=" text-center">店家資訊</h2>
+            <div class="line mb-5 mt-3 mt-xl-5" style="width: 60px;height: 5px;background-color: yellow;margin: 0 auto;"></div>
+            <h4 class=" text-center">意見回饋表</h4>
+            <p class=" text-center">您可以把意見及問題告訴我們，一定盡速給您答覆。
+            </p>
+
+            <form class="form">
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">聯絡人</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control form-control" id="colFormLabel" placeholder="範例: 李真帥">
                     </div>
                 </div>
-            </div>
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">公司名稱</label>
+                    <div class="col-sm-10">
+                        <input type="firm" class="form-control" id="colFormLabel" placeholder="範例: 山腳傳奇-土鳳梨酥">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">電子信箱</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control form-control" id="colFormLabel" placeholder="範例: ikx1026g@gmail.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label col-form-label">主旨</label>
+                    <div class="col-sm-10">
+                        <input type="theme" class="form-control form-control" id="colFormLabel" placeholder="範例: 我已匯款，請幫忙出貨。">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">內容</label>
+                    <textarea class="form-control" id="colFormLabel" rows="8" placeholder="範例: 到貨日，三聯發票或統編等等..."></textarea>
+                </div>
+                <div class="container d-flex">
+                    <a class="btn btn-success mb-3 mr-auto ml-auto" href="#pay" role="button">送出</a>
+                </div>
+            </form>
+        </div>
 
-            <div id="question" class="container w-100 mb-5 mt-3 mt-xl-5">
-                <h3>如何購買商品?</h3>
-                <div class="line mt-3 mb-3" style="width: 60px;height: 5px;background-color: yellow;"></div>
-                <samp>您可先將欲購買的商品「加入購物車」， 選購完成後，開始結帳並選擇付款方式。 </samp>
-            </div>
-            <div class="container w-100 mb-5 mt-3 mt-xl-5">
-                <h3>消費滿多少才可以免運費呢？</h3>
-                <div class="line mt-3 mb-3" style="width: 60px;height: 5px;background-color: yellow;"></div>
-                <samp>單次訂單消費滿NT$1600， 即可享免運優惠哦！（限同一地址） 購買不足1600元 ，運費100。 離島運費另計(論件),請先洽詢。 貨到付款手續費 加60 元 (固定收取)。 </samp>
-            </div>
-            <div class="container w-100 mb-5 mt-3 mt-xl-5">
-                <h3>下單後多久可以出貨? </h3>
-                <div class="line mt-3 mb-3" style="width: 60px;height: 5px;background-color: yellow;"></div>
-                <samp>訂單完成後 2 ~ 4 天即可出貨。 也可以指定上午或下午,只是大約間間, 急件請日期提早一天。 星期日, 及每天晚上不送貨。 </samp>
-            </div>
-            <div class="container w-100 mb-5 mt-3 mt-xl-5">
-                <h3>付款方式有哪些？ </h3>
-                <div class="line mt-3 mb-3" style="width: 60px;height: 5px;background-color: yellow;"></div>
-                <samp>可以採「貨到付款」、 「ATM轉帳匯款」或「無摺存款」方式。 </samp>
-            </div>
+        <div class="container mb-5 mt-3 mt-xl-5 bg-light p-3">
+            <h4 class=" text-center">聯絡我們</h4>
+            <div class="line mb-5 mt-3 mt-xl-5 " style="width: 60px;height: 5px;background-color: yellow;margin: 0 auto;"></div>
 
-            <div class="bgPic bgPic02" style="background-image: url('img/03_notice/notice_pic_02.jpg');"></div>
-
-            <div id="pay" class="container w-100 mb-5 mt-3 mt-xl-5 text-center">
-                <h3>「ATM轉帳匯款」匯款帳號： </h3>
-                <div class="line"></div>
-                <hr>
-                <p>郵局代號700 </p>
-                <p>帳號:008-123-710-8968-5</p>
-                <p>戶名:陳小惠</p>
-                <hr>
-                <p>聯絡電話:04-8734027</p>
-                <p>客服手機:0935389908</p>
-                <p>LINE ID:@ikx1036g</p>
-                <p>請有下單並已匯款的朋友,請到<a href="message.html">|意見回饋表|</a></p>
-                <p>-</p>
-            </div>
+            <p>聯絡電話:04-8734027</p>
+            <p>客服手機:0935389908</p>
+            <p>LINE ID:@ikx1036g</p>
+            <p>營業時間:8:00~19:00</p>
+            <p>本店位址:彰化縣社頭鄉朝興村山腳路二段479巷20號(朝興國小後面)</p>
+            <p>★如果使用導航系統，請以朝興國小為目的地。</p>
+        </div>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1084.4067851291877!2d120.60651236524124!3d23.907515731321055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693411f803bc51%3A0x76223048ebecfd60!2z5qau6LK057OV6aSF6KGM!5e0!3m2!1szh-TW!2stw!4v1527563513937"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="bg_house  position-relative"></div>
 
@@ -299,7 +309,7 @@
                 </div>
             </div>
             <p class=" text-center">
-                <a href="mfl_p1/notice.html">進入初版設計</a>
+                <a href="mfl_p1/message.html">進入初版設計</a>
             </p>
         </div>
     </div>

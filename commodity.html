@@ -1,0 +1,567 @@
+<!doctype html>
+<!-- 20180605-updata -->
+<html lang="zh-tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/btn.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <title>山腳傳奇-商品陳列</title>
+    <style>
+        /* ***************navbar****************/
+
+        .navbar {
+            height: 260px;
+            background-image: url('img/06_bg-img/bg_pic_01.jpg');
+            margin: 0;
+        }
+
+        .navbar .container img {
+            right: 0;
+            z-index: 0;
+        }
+
+        /* ---------OOOOOooo------------------ */
+
+        .logo {
+            width: 290px;
+            height: 290px;
+            background-image: url('logo.png');
+            background-size: cover;
+            background-position: center bottom;
+            top: 130px;
+            left: 4rem;
+            z-index: 0;
+            /* transition: 1s; */
+        }
+
+        .center {
+            width: 100%;
+            /* height: 740px; */
+            margin: 0 auto;
+        }
+
+        #commodity .card {
+            border-radius: .50rem;
+            overflow: hidden;
+        }
+
+
+        #commodity .container {
+            width: 70%;
+        }
+
+        .container .banner {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .center .container {
+            width: 60%;
+        }
+
+        .bg_house {
+            width: 100%;
+            height: 400px;
+            background-image: url('img/06_bg-img/bg_house.png');
+            background-size: cover;
+            background-position: 0 90%;
+            bottom: 0;
+            z-index: -999;
+        }
+
+        input {
+            width: 50px;
+        }
+
+        .bg-img {
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center 60%;
+        }
+
+        #two .bg-img {
+            height: 250px;
+        }
+
+        @media (max-width: 991.98px) {
+            .logo {
+                top: 1rem;
+                left: 50%;
+                transform: translateX(-50%)
+                /* transition: 1s; */
+            }
+            #two .bg-img {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            #commodity .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Swiper -->
+
+    <div class="swiper-container position-fixed fixed-top d-block d-lg-none">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+
+                <!-- btn               -->
+
+                <ul class="navbar-nav w-75 h-100 justify-content-around align-items-center">
+                    <li class="container">
+                        <div class="logo position-relative"></div>
+                    </li>
+                    <li class="navi_01 mr-0">
+                        <a href="about.html" title="關於我們">關於我們</a>
+                    </li>
+                    <li class="navi_02 mr-0">
+                        <a class="nav-link" href="news.html">最新公告</a>
+                    </li>
+                    <li class="navi_03 mr-0">
+                        <a class="nav-link" href="notice.html">訂購須知</a>
+                    </li>
+                    <li class="navi_04 mr-0">
+                        <a class="nav-link" href="commodity.html">商品陳列</a>
+                    </li>
+                    <li class="navi_05 mr-0">
+                        <a class="nav-link" href="message.html">店家資訊</a>
+                    </li>
+                </ul>
+
+                <!-- <button></button> -->
+
+            </div>
+            <div class="swiper-slide content">
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+
+    <div class="navbar">
+        <div class="container">
+            <img class="position-absolute" src="img/06_bg-img/bg_nav.png" alt="">
+            <div class="container w-75 mt-5 pb-4">
+                <div class="banner banner_cen d-none d-lg-block">
+                    <ul>
+                        <div class="row">
+                            <div class="col-12 col-md-1 p-0"></div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_01">
+                                    <a href="about.html" title="關於我們">關於我們</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_02">
+                                    <a href="news.html" title="最新消息">最新消息</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_03">
+                                    <a href="notice.html" title="訂購須知">訂購須知</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_04">
+                                    <a href="commodity.html" title="商品陳列">商品陳列</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_05">
+                                    <a href="message.html" title="店家資訊">店家資訊</a>
+                                </li>
+                                <div class="col-12 col-md-1 p-0"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <div class="logo position-absolute d-none d-lg-block"></div>
+    </a>
+
+    <!-- index -->
+
+
+    <div id="commodity">
+        <div class="bgPic bgPic01" style="background-image: url('img/04_commodity/commodity_pic_03.jpg');"></div>
+        <!--d-flex justify-content-center-->
+        <div id="cssm" class="container w-75 mb-3 mt-5 text-center">
+            <h2>看的見‧最安心</h2>
+            <img src="img/04_commodity/CSSM.png" style="width: 100%;" alt="">
+        </div>
+        <div id="one" class="container mb-3 mt-5 text-center">
+            <h2>商品陳列</h2>
+            <h4>散裝-土鳳梨酥</h4>
+            <div class="line"></div>
+
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/commodity_pic_02.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">散裝/原味土鳳梨酥</h5>
+                            <p class="card-text">10元/30g</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-6">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/commodity_pic_01.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">散裝/杏仁角土鳳梨酥</h5>
+                            <p class="card-text">25元/50g</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="two" class="container mb-3 mt-5">
+
+            <h4>禮盒-土鳳梨酥</h4>
+            <div class="line"></div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-20.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+                            <p class="card-text">240元/20入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-10.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/杏仁角土鳳梨酥</h5>
+                            <p class="card-text">270元/10入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-15.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+                            <p class="card-text">180元/15入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-16-1.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/原味/杏仁角土鳳梨酥</h5>
+                            <p class="card-text">300元/16入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-16-2.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/杏仁角土鳳梨酥</h5>
+                            <p class="card-text">420元/16入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow mb-3 mb-md-4">
+                        <div class="bg-img" style="background-image: url('img/04_commodity/for-12.jpg')"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">禮盒/原味土鳳梨酥</h5>
+                            <p class="card-text">150元/12入</p>
+
+                            <div class="quantity d-flex justify-content-center mb-3">
+                                <button class="minus-btn" type="button" name="button">
+                                    <img src="img/minus.svg" alt="" />
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <img src="img/plus.svg" alt="" />
+                                </button>
+                            </div>
+
+                            <div class="container d-flex justify-content-center">
+                                <a class="btn btn-success mb-3" href="#pay" role="button">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bg_house  position-relative"></div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div class="container footerwrap">
+            <div class="right">
+                <ul class="nonestyle">
+                    <div class="row">
+                        <div class="col-0 col-ig-1"></div>
+                        <div class="col-2">
+                            <li class="navi_01">
+                                <a href="about.html" title="關於我們">關於我們</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_02">
+                                <a href="news.html" title="最新消息">最新消息</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_03">
+                                <a href="notice.html" title="購買須知">購買須知</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_04">
+                                <a href="commodity.html" title="商品陳列">商品陳列</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_05">
+                                <a href="message.html" title="店家資訊">店家資訊</a>
+                            </li>
+                        </div>
+                        <div class="col-2 col-ig-1"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="left text-truncate">
+                <div class="container d-none d-md-block">
+                    山腳傳奇:土鳳梨酥版權所有 │ 電話 : 04-8734027 │地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                </div>
+
+                <div class="row d-block d-md-none ">
+                    <div class="col-12 col-md-4 text-center">
+                        山腳傳奇:土鳳梨酥版權所有
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        電話 : 04-8734027
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                    </div>
+                </div>
+            </div>
+            <p class=" text-center">
+                <a href="mfl_p1/commodity.html">進入初版設計</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="style/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var menuButton = document.querySelector('.menu-button');
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                init: function () {
+                    var slider = this;
+                    menuButton.addEventListener('click', function () {
+                        if (slider.activeIndex === 0) {
+                            slider.slideNext();
+                        } else {
+                            slider.slidePrev();
+                        }
+                    }, true);
+                },
+                slideChange: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                        menuButton.classList.add('cross');
+                    } else {
+                        menuButton.classList.remove('cross');
+                    }
+                },
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+            $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value = 100;
+            }
+
+            $input.val(value);
+        });
+
+    </script>
+</body>
+
+</html>
