@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- <menu-css> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/menu.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/btn.css">
+
+    <title>山腳傳奇-關於我們</title>
+
+    <style type="text/css">
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 2000px;
+            /* Testing height */
+            font-family: 'Lato', sans-serif;
+            padding: 30px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 1em;
+        }
+
+        ul li {
+            line-height: 2em;
+            list-style: square;
+        }
+
+        .line1, .line2, .line3{
+            width: 40px;
+            height: 5px;
+            background-color: #aaa;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+        }
+        .line1{
+            top: 25%;
+        }
+        .line2{
+            top: 50%;
+        }
+        .line3{
+            top: 75%;
+        }
+
+        /* OPTIONAL THEMING */
+
+        .mobile-toggleable-menu {
+            background-color: #ffe;
+            background-image: url('img/06_bg-img/bg_pic_01.jpg');
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 0;
+        }
+
+        .mobmenu-toggle {
+            background-color: orange;
+            color: #fff;
+            font-size: 35px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .mobile-toggleable-menu li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .mobile-toggleable-menu li a {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            border-bottom: 1px solid #444;
+            text-decoration: none;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .mobile-toggleable-menu li a:hover {
+            background-color: #222;
+            color: orange;
+        }
+
+        .mobmenu-toggle:hover {
+            background-color: darkOrange;
+        }
+
+        @media handheld,
+        screen and (max-width: 500px) {
+            .mobile-menu-toggle-button:checked~.mobmenu-toggle {
+                background-color: #000;
+                color: orange;
+                -webkit-transform: rotate(-180deg);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="navbar">
+        <div class="container">
+            <img class="position-absolute" src="img/06_bg-img/bg_nav.png" alt="">
+            <div class="container w-75 mt-5 pb-4">
+                <div class="banner banner_cen d-none d-lg-block">
+                    <ul>
+                        <div class="row">
+                            <div class="col-12 col-md-1 p-0"></div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_01">
+                                    <a href="about.html" title="關於我們">關於我們</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_02">
+                                    <a href="news.html" title="最新消息">最新消息</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_03">
+                                    <a href="notice.html" title="訂購須知">訂購須知</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_04">
+                                    <a href="commodity.html" title="商品陳列">商品陳列</a>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-2 p-0">
+                                <li class="navi_05">
+                                    <a href="message.html" title="店家資訊">店家資訊</a>
+                                </li>
+                                <div class="col-12 col-md-1 p-0"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <div class="logo position-absolute d-none d-lg-block"></div>
+    </a>
+
+    <!-- index -->
+
+    <div id="about">
+        <div class="bgPic bgPic01" style="background-image: url('img/00_index/indx_pic_02.jpg');"></div>
+        <!--d-flex justify-content-center-->
+        <div class="container mb-5 mt-3 mt-md-5">
+            <h2 class=" text-center">起源</h2>
+            <div class="line"></div>
+            <p>榮貴餅行是社頭鄉老店， 早年以傳統婚嫁大餅為主力商品， 開業至今約45年， 三年多前第二代兩兄弟分開經營， 哥哥另外創立「順貴餅行」承接老父的大餅手藝， 弟弟蕭益能則保留榮貴餅行店名， 並改以土鳳梨酥為主力商品。
+            </p>
+            <img class="mb-3" src="img/01_about/about_pic_02.jpg" style="width: 100%;" alt="">
+
+        </div>
+        <div class="container mb-5 mt-3 mt-xl-5">
+            <h2 class=" text-center">理念</h2>
+            <div class="line"></div>
+            <h4 class=" text-center">誠信</h4>
+            <p>就是蕭益能經營餅鋪的中心理念， 這個理念不只表現在確實報稅， 也表現在食材與製程。 不像許多網路名店製程不敢公開， 山腳傳奇的廚房完全透明開放， 從員工削鳳梨、煮鳳梨、包餡、烘烤， 所有製程一清二楚，沒有秘密。
+            </p>
+            <div class="row align-items-center justify-content-center bg-light p-3">
+                <div class="col-12 col-md-12 col-xl-12">
+                    <img class="mb-3" src="img/01_about/about_pic_03.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-xl-6">
+                    <img class="mb-3" src="img/01_about/about_pic_0300.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-xl-6">
+                    <img class="mb-3" src="img/01_about/about_pic_0400.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="col-12 col-md-12 col-xl-12">
+                    <img class="mb-3" src="img/01_about/about_pic_04.jpg" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-5 mt-3 mt-xl-5">
+            <h2 class=" text-center">特色</h2>
+            <div class="line"></div>
+            <p>山腳傳奇的土鳳梨酥則是完全只用鳳梨，沒有任何香精或冬瓜等添加物。山腳傳奇的鳳梨大多與當地農民契作，非產季時才轉向台南關廟等地購買。6到8月正值社頭土鳳梨產季，此時的鳳梨香甜且僅帶些許微酸，是最好的品嘗時機，每年此時山腳傳奇平均每天要處理5千台斤左右鳳梨，多餘部分會做餡後冷凍，等非產季時再與其他產地鳳梨混合使用，確保每一口都有社頭鄉土鳳梨滋味。
+            </p>
+        </div>
+        <div class="bgPic bgPic02" style="background-image: url('img/01_about/about_pic_06.jpg');"></div>
+
+        <div class="bg_house  position-relative"></div>
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div class="container footerwrap">
+
+            <div class="right">
+                <ul class="nonestyle">
+                    <div class="row">
+                        <div class="col-0 col-ig-1"></div>
+                        <div class="col-2">
+                            <li class="navi_01">
+                                <a href="about.html" title="關於我們">關於我們</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_02">
+                                <a href="news.html" title="最新消息">最新消息</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_03">
+                                <a href="notice.html" title="購買須知">購買須知</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_04">
+                                <a href="commodity.html" title="商品陳列">商品陳列</a>
+                            </li>
+                        </div>
+                        <div class="col-2">
+                            <li class="navi_05">
+                                <a href="message.html" title="店家資訊">店家資訊</a>
+                            </li>
+                        </div>
+                        <div class="col-2 col-ig-1"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="left text-truncate">
+                <div class="container d-none d-md-block">
+                    山腳傳奇:土鳳梨酥版權所有 │ 電話 : 04-8734027 │地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                </div>
+
+                <div class="row d-block d-md-none ">
+                    <div class="col-12 col-md-4 text-center">
+                        山腳傳奇:土鳳梨酥版權所有
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        電話 : 04-8734027
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        地址 : 彰化縣社頭鄉朝興村山腳路二段479巷20號
+                    </div>
+                </div>
+            </div>
+            <p class=" text-center">
+                <a href="mfl_p1/about.html">進入初版設計</a>
+            </p>
+        </div>
+    </div>
+    <nav>
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle mobile-menu-toggle-button">
+        <ul id="plain-menu" class="mobile-toggleable-menu mobile-left">
+            <div class="row flex-row align-items-between ">
+                <div class="col-12">
+                    <li class="navi_01">
+                        <a href="about.html" title="關於我們"></a>
+                    </li>
+                </div>
+                <div class="col-12">
+                    <li class="navi_02">
+                        <a href="about.html" title="關於我們"></a>
+                    </li>
+                </div>
+                <div class="col-12">
+                    <li class="navi_03">
+                        <a href="about.html" title="關於我們"></a>
+                    </li>
+                </div>
+                <div class="col-12">
+                    <li class="navi_04">
+                        <a href="about.html" title="關於我們"></a>
+                    </li>
+                </div>
+                <div class="col-12">
+                    <li class="navi_05">
+                        <a href="about.html" title="關於我們"></a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+        <label class="mobile-left mobmenu-toggle" for="mobile-menu-toggle" tabindex="1">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </label>
+    </nav>
+
+    <!-- <div class="box"></div>
+    <div id="bnt_box" class="bnt_box myMOUSE" tabindex="1">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
